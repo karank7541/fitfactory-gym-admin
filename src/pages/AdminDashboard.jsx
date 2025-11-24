@@ -18,13 +18,13 @@ const AdminDashboard = () => {
   const fetchStats = async () => {
     try {
       // 1️⃣ Fetch Clients
-      const clientsRes = await fetch("http://localhost:5001/api/admin/users", {
+      const clientsRes = await fetch("https://fitfactory-backend1.onrender.com/api/admin/users", {
         headers: { Authorization: adminToken },
       });
       const clients = await clientsRes.json();
 
       // 2️⃣ Fetch Active Subscriptions
-      const subRes = await fetch("http://localhost:5001/api/admin/subscriptions", {
+      const subRes = await fetch("https://fitfactory-backend1.onrender.com/api/admin/subscriptions", {
         headers: { Authorization: adminToken },
       });
       const subs = await subRes.json();

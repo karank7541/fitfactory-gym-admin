@@ -10,7 +10,7 @@ const AdminMessages = () => {
   // Fetch messages from backend
   const fetchMessages = async () => {
     try {
-      const res = await fetch("http://localhost:5001/api/admin/messages", {
+      const res = await fetch("https://fitfactory-backend1.onrender.com/api/admin/messages", {
         headers: {
           Authorization: adminToken,
         },

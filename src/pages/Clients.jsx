@@ -10,7 +10,7 @@ const Clients = () => {
   // Fetch users from backend
   const fetchClients = async () => {
     try {
-      const res = await fetch("http://localhost:5001/api/admin/users", {
+      const res = await fetch("https://fitfactory-backend1.onrender.com/api/admin/users", {
         method: "GET",
         headers: {
           Authorization: adminToken,

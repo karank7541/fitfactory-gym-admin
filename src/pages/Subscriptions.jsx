@@ -11,7 +11,7 @@ const Subscriptions = () => {
   // ===============================
   const fetchSubscriptions = async () => {
     try {
-      const res = await fetch("http://localhost:5001/api/admin/subscriptions", {
+      const res = await fetch("https://fitfactory-backend1.onrender.com/api/admin/subscriptions", {
         headers: {
           Authorization: adminToken,
         },
