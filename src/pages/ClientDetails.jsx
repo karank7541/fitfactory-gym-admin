@@ -20,7 +20,7 @@ const ClientDetails = () => {
   // Fetch user details
   const fetchClient = async () => {
     try {
-      const res = await fetch(`https://fitfactory-backend1.onrender.com/api/admin/user/${id}`, {
+      const res = await fetch(`https://fitfactory-backend1-production.up.railway.app/api/admin/user/${id}`, {
         headers: { Authorization: adminToken },
       });
 
@@ -63,7 +63,7 @@ const ClientDetails = () => {
 
     try {
       const res = await fetch(
-        `https://fitfactory-backend1.onrender.com/api/admin/update-plan/${id}`,
+        `https://fitfactory-backend1-production.up.railway.app/api/admin/update-plan/${id}`,
         {
           method: "PATCH",
           headers: {
@@ -96,7 +96,7 @@ const ClientDetails = () => {
 
     try {
       const res = await fetch(
-        `https://fitfactory-backend1.onrender.com/api/admin/delete-user/${id}`,
+        `https://fitfactory-backend1-production.up.railway.app/api/admin/delete-user/${id}`,
         {
           method: "DELETE",
           headers: { Authorization: adminToken },

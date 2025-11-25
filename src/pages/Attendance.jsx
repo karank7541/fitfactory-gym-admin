@@ -10,7 +10,7 @@ const Attendance = () => {
   // Fetch attendance from backend
   const fetchAttendance = async () => {
     try {
-      const res = await fetch("https://fitfactory-backend1.onrender.com/api/admin/attendance", {
+      const res = await fetch("https://fitfactory-backend1-production.up.railway.app/api/admin/attendance", {
         headers: {
           Authorization: adminToken,
         },

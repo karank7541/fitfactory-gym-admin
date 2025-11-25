@@ -5,7 +5,7 @@ const AdminFeedback = () => {
   const adminToken = localStorage.getItem("adminToken");
 
   const fetchFeedback = async () => {
-    const res = await fetch("https://fitfactory-backend1.onrender.com/api/admin/feedback", {
+    const res = await fetch("https://fitfactory-backend1-production.up.railway.app/api/admin/feedback", {
       headers: { Authorization: adminToken },
     });
 
@@ -16,7 +16,7 @@ const AdminFeedback = () => {
   const deleteFeedback = async (id) => {
     if (!window.confirm("Delete this feedback?")) return;
 
-    await fetch(`https://fitfactory-backend1.onrender.com/api/admin/feedback/${id}`, {
+    await fetch(`https://fitfactory-backend1-production.up.railway.app/api/admin/feedback/${id}`, {
       method: "DELETE",
       headers: { Authorization: adminToken },
     });

@@ -10,7 +10,7 @@ const AdminMessages = () => {
   // Fetch messages from backend
   const fetchMessages = async () => {
     try {
-      const res = await fetch("https://fitfactory-backend1.onrender.com/api/admin/messages", {
+      const res = await fetch("https://fitfactory-backend1-production.up.railway.app/api/admin/messages", {
         headers: {
           Authorization: adminToken,
         },
@@ -38,7 +38,7 @@ const AdminMessages = () => {
 
     try {
       const res = await fetch(
-        `http://localhost:5001/api/admin/messages/${id}`,
+        `https://fitfactory-backend1-production.up.railway.app/api/admin/messages/${id}`,
         {
           method: "DELETE",
           headers: {

@@ -11,7 +11,7 @@ const Subscriptions = () => {
   // ===============================
   const fetchSubscriptions = async () => {
     try {
-      const res = await fetch("https://fitfactory-backend1.onrender.com/api/admin/subscriptions", {
+      const res = await fetch("https://fitfactory-backend1-production.up.railway.app/api/admin/subscriptions", {
         headers: {
           Authorization: adminToken,
         },
